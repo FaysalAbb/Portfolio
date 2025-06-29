@@ -631,7 +631,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #7A44FF;}
     align-items: center;
     justify-content: center;
     position:relative;
-    background:url(assets/images/cards/hero-section.jpg)no-repeat;
+    background:url(../assets/images/cards/hero-section.jpg)no-repeat;
     background-size:cover;
     background-position: center;
     height: 900px;
