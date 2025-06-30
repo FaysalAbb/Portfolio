@@ -310,6 +310,24 @@
         }
 
         /* Timeline Items */
+         .education-timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            padding-right: 40px;
+        }
+
+        .education-timeline::before {
+            content: '';
+            position: absolute;
+            right: 20px;
+            top: 0;
+            height: 100%;
+            width: 4px;
+            background: linear-gradient(to bottom, #7A44FF, #38b6ff);
+        }
+
+        /* Timeline Items */
         .education-timeline-item {
             position: relative;
             margin-bottom: 2.5rem;
@@ -352,59 +370,45 @@
         }
 
         .education-timeline-date i {
-            margin-left: 8px;
-        }
-
-        .education-timeline-content h3 {
-            font-size: 1.5rem;
-            color: #fff;
-            margin-bottom: 0.8rem;
-            display: flex;
-            align-items: center;
-        }
-
-        .education-timeline-content h3 i {
-            color: #7A44FF;
-            margin-left: 10px;
+            margin-right: 8px;
         }
 
         .education-timeline-content h4 {
-            font-size: 1.2rem;
-            color: #38b6ff;
-            margin-bottom: 0.6rem;
-            font-weight: 500;
+            font-size: 1.5rem;
+            color: #fff;
+            margin-bottom: 0.8rem;
         }
 
         .education-timeline-content h5 {
-            color: #a8b2d1;
-            font-size: 1rem;
+            color: #38b6ff;
+            font-size: 1.2rem;
             margin-bottom: 1.2rem;
             display: flex;
             align-items: center;
         }
 
         .education-timeline-content h5 i {
-            margin-left: 8px;
+            margin-right: 8px;
             color: #7A44FF;
         }
 
         .education-timeline-description {
             list-style: none;
-            padding-right: 0;
+            padding-left: 0;
         }
 
         .education-timeline-description li {
             position: relative;
-            padding-right: 1.8rem;
+            padding-left: 1.8rem;
             margin-bottom: 0.9rem;
             color: #c2c9d6;
             line-height: 1.6;
         }
 
         .education-timeline-description li::before {
-            /* content: "▹"; */
+            content: "▹";
             position: absolute;
-            right: 0;
+            left: 0;
             color: #7A44FF;
             font-size: 1.2rem;
         }
@@ -429,7 +433,7 @@
                 height: 20px;
             }
 
-            .education-section-heading h2 {
+            .section-heading h2 {
                 font-size: 2rem;
             }
         }
@@ -439,7 +443,7 @@
                 padding: 1.2rem;
             }
 
-            .education-timeline-content h3 {
+            .education-timeline-content h4 {
                 font-size: 1.3rem;
             }
             
@@ -451,8 +455,11 @@
                 font-size: 1rem;
                 padding: 0 15px;
             }
+            
+            .education-timeline-date {
+                font-size: 1rem;
+            }
         }
-
 
 
 /* Remove Bootstrap Column Conflicts */
